@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #050816;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+
+
+/* Hero */
+
+.hero {
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 25px;
+
+    background:
+    radial-gradient(circle at top right, #6d28d9, transparent 30%),
+    radial-gradient(circle at bottom left, #2563eb, transparent 30%);
+
+}
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+
+.tag {
+    color: #a78bfa;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+
+h1 span {
+    color: #8b5cf6;
+}
+
+
+.hero-content p {
+    margin-top: 20px;
+    color: #cbd5e1;
+}
+
+
+
+/* Buttons */
+
+.buttons {
+    margin-top: 30px;
+}
+
+
+.btn {
+
+    display: inline-block;
+    padding: 12px 25px;
+    background: #8b5cf6;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+
+.outline {
+
+    background: transparent;
+    border: 1px solid #8b5cf6;
+
+}
+
+
+
+/* Sections */
+
+section:not(.hero) {
+
+    padding: 80px 25px;
+    text-align: center;
+
+}
+
+
+section h2 {
+
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+
+
+/* Project Card */
+
+.card {
+
+    margin: 30px auto;
+    padding: 25px;
+
+    max-width: 350px;
+
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+
+    backdrop-filter: blur(15px);
+
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .nav-links {
+        display:none;
+    }
+
+}
