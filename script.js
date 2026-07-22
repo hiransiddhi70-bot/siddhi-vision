@@ -35,3 +35,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+const words = [
+    "AI Engineer",
+    "Full Stack Developer",
+    "Future Founder",
+    "Tech Explorer"
+];
+
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
+
+function typeEffect(){
+
+    const element = document.getElementById("typing");
+
+    if(!element) return;
+
+    current = words[i];
+
+    if(!isDeleting){
+
+        element.textContent = current.substring(0,j++);
+        
+        if(j > current.length){
+            isDeleting = true;
+            setTimeout(typeEffect,1000);
+            return;
+        }
+
+    } else {
+
+        element.textContent = current.substring(0,j--);
+
+        if(j < 0){
+            isDeleting = false;
+            i = (i+1)%words.length;
+        }
+    }
+
+    setTimeout(typeEffect,100);
+}
+
+typeEffect();
