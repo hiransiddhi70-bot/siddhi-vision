@@ -166,3 +166,27 @@ section h2 {
     }
 
 }
+#typing{
+    color:#a78bfa;
+}
+
+
+.tech-badges{
+    margin-top:25px;
+}
+
+
+.tech-badges span{
+
+    display:inline-block;
+    padding:8px 15px;
+    margin:5px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.1);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    font-size:14px;
+}
